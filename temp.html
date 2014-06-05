@@ -896,7 +896,6 @@ has_trait&lt;T&gt;::value // only if value is a bool member
 P && Q
 P || (Q && R)
 M == N              // only if the result type is bool
-has_trait&lt;T&gt;::value // only if value is a bool member
 M < N               // only if the result type is bool
 M + N >= 0
 P || !(M < N)
@@ -915,7 +914,7 @@ false
     calls a function concept or refers to a variable concept 
     <cxx-ref to="dcl.concept"></cxx-ref> is a <dfn>concept check</dfn>.
     A concept check is not evaluated; it is simplified according to the
-    rules described in this.</p>
+    rules described in this sub-clause.</p>
 
     <p>Certain subexpressions of a
     <cxx-grammarterm>constraint-expression</cxx-grammarterm> are 
